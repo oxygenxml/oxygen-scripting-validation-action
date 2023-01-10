@@ -13,12 +13,12 @@ env:
 
 # Sample usage
 
-If you don't already have a workflow defined in your repository, you can use the sample below.
+If you don't already have a workflow defined in your repository, you can use one of the samples below.
 
+This workflow requires manual trigger from the 'Actions' tab:
 ```yaml
-name: Run Validation
+name: Run Validation (manually)
 on:
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
     inputs:
       validationDir:
@@ -35,6 +35,30 @@ jobs:
         with:
           validationDir: ${{ github.event.inputs.validationDir }}
 ```
+This workflow automatically starts when a commit is pushed to the <i>main</i> branch, but can also be triggered manually:
+```yaml
+name: Run Validation (automatically)
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch: # Allows you to run this workflow manually from the Actions tab
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Oxygen Validation Script
+        uses: oxygenxml/oxygen-scripting-validation-action@v1.0.0
+        env:
+          SCRIPTING_LICENSE_KEY: ${{secrets.SCRIPTING_LICENSE_KEY}}
+        with:
+          validationDir: 'validation' # Here you specify the directory to be validated.
+```
+
 You can also check [Oxygen Scripting - Validation template](https://github.com/oxygenxml/oxygen-script-validation-template) for sample validation files.
 
 # Deployment to GitHub Pages
