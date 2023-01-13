@@ -29,7 +29,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Oxygen Validation Script
-        uses: oxygenxml/oxygen-scripting-validation-action@v1.0.0
+        uses: oxygenxml/oxygen-scripting-validation-action@v1.1.0
         env:
           SCRIPTING_LICENSE_KEY: ${{secrets.SCRIPTING_LICENSE_KEY}}
         with:
@@ -52,7 +52,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Oxygen Validation Script
-        uses: oxygenxml/oxygen-scripting-validation-action@v1.0.0
+        uses: oxygenxml/oxygen-scripting-validation-action@v1.1.0
         env:
           SCRIPTING_LICENSE_KEY: ${{secrets.SCRIPTING_LICENSE_KEY}}
         with:
