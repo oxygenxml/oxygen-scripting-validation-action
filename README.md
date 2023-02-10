@@ -1,6 +1,6 @@
-# Oxygen Validation Script
+# Oxygen Validation Action
 
-This action triggers Oxygen Scripting to perform a validation on your repository files. All you have to do is to include this action in your workflow and choose the directory to be validated. Find more info about workflows on https://docs.github.com/en/actions/using-workflows.
+This action triggers <i>Oxygen Scripting</i> to perform a validation on your repository files. All you have to do is to include this action in your workflow and choose the directory to be validated. Find more info about workflows on https://docs.github.com/en/actions/using-workflows.
 
 # Requirements
 
@@ -63,6 +63,6 @@ You can also check [Oxygen Scripting - Validation template](https://github.com/o
 
 # Deployment to GitHub Pages
 
-After a successful run of the Validation Script, a "validationReport.html" file is created on the <i>gh-pages</i> branch. If you want this report to be published to GitHub Pages, all you have to do is go to Settings &rarr; Pages, and under <i>Build and deployment</i> section select the <i>gh-pages</i> branch instead of the <i>main</i> branch. 
+After a successful run of the <i>Oxygen Validation Script</i>, a "validationReport.html" file is created on the <i>gh-pages</i> branch. If you want this report to be published to GitHub Pages, all you have to do is go to Settings &rarr; Pages, and under <i>Build and deployment</i> section select the <i>gh-pages</i> branch instead of the <i>main</i> branch. 
 The deployment workflow should automatically start and the report should be available shortly at: https://{userid}.github.io/{reponame}/validationReport.html.
 
