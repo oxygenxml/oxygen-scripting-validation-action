@@ -1,4 +1,4 @@
-name: Oxygen Validation
+name: Oxygen Validation Action
 description: Validate your files using Oxygen Scripting
 branding:
   icon: 'check-square'
