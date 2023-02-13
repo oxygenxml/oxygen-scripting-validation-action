@@ -61,10 +61,11 @@ jobs:
           validationDir: 'validation' # Here you specify the directory to be validated.
 ```
 
-👀 Check [Oxygen Scripting - Validation template](https://github.com/oxygenxml/oxygen-script-validation-template) for sample validation files.
+👀 Check [Oxygen Scripting - Validation template](https://github.com/oxygenxml/oxygen-script-validation-template) for a ready-to-use template with sample validation files.
 
 # Deployment to GitHub Pages
 
 After a successful run of the <i>Oxygen Validation Script</i>, a "validationReport.html" file is created on the <i>gh-pages</i> branch. If you want this report to be published to GitHub Pages, all you have to do is go to Settings &rarr; Pages, and under <i>Build and deployment</i> section select the <i>gh-pages</i> branch instead of the <i>main</i> branch. 
+
 The deployment workflow should automatically start and the report should be available shortly at: https://{userid}.github.io/{reponame}/validationReport.html.
 
