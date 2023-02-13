@@ -15,7 +15,7 @@ env:
 
 If you don't already have a workflow defined in your repository, you can use one of the samples below.
 
-This workflow requires manual trigger from the 'Actions' tab:
+💡 This workflow requires manual trigger from the 'Actions' tab:
 ```yaml
 name: Run Validation (manually)
 on:
@@ -35,7 +35,7 @@ jobs:
         with:
           validationDir: ${{ github.event.inputs.validationDir }}
 ```
-This workflow automatically starts when a commit is pushed to the <i>main</i> branch, but can also be triggered manually:
+💡 This workflow automatically starts when a commit is pushed to the <i>main</i> branch, but can also be triggered manually:
 ```yaml
 name: Run Validation (automatically)
 # Controls when the workflow will run
@@ -59,7 +59,9 @@ jobs:
           validationDir: 'validation' # Here you specify the directory to be validated.
 ```
 
-You can also check [Oxygen Scripting - Validation template](https://github.com/oxygenxml/oxygen-script-validation-template) for sample validation files.
+👀 Check [Oxygen Scripting - Validation template](https://github.com/oxygenxml/oxygen-script-validation-template) for sample validation files.
+
+👀 See [Oxygen Validate Script](https://www.oxygenxml.com/doc/versions/25.0/ug-editor/topics/scripting_oxygen_validate.html) for more details about this script.
 
 # Deployment to GitHub Pages
 
