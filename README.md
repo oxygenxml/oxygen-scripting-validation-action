@@ -2,6 +2,8 @@
 
 This action triggers <i>Oxygen Scripting</i> to perform a validation on your repository files. All you have to do is to include this action in your workflow and choose the directory to be validated. Find more info about workflows on https://docs.github.com/en/actions/using-workflows.
 
+👀 See [Oxygen Validate Script](https://www.oxygenxml.com/doc/versions/25.0/ug-editor/topics/scripting_oxygen_validate.html) for more details about this script.
+
 # Requirements
 
 In order to use this action, you need to obtain an <i>Oxygen Scripting</i> license key from https://www.oxygenxml.com/xml_scripting/pricing.html (you can also request a [trial](https://www.oxygenxml.com/xml_scripting/register.html)). Add it as a secret to your repository (Settings &rarr; Secrets &rarr; Actions &rarr; New repository secret), and name it "SCRIPTING_LICENSE_KEY".
@@ -60,8 +62,6 @@ jobs:
 ```
 
 👀 Check [Oxygen Scripting - Validation template](https://github.com/oxygenxml/oxygen-script-validation-template) for sample validation files.
-
-👀 See [Oxygen Validate Script](https://www.oxygenxml.com/doc/versions/25.0/ug-editor/topics/scripting_oxygen_validate.html) for more details about this script.
 
 # Deployment to GitHub Pages
 
