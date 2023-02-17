@@ -1,5 +1,5 @@
-name: Oxygen Validation Action
-description: Validate your files using Oxygen Scripting
+name: Oxygen XML/JSON - Validate Files
+description: Validate XML, XSD, JSON, JSON Schema, YAML, HTML, CSS, LESS, WSDL, XQuery, JS, RNG and other files using Oxygen Scripting
 branding:
   icon: 'check-square'
   color: 'blue'
