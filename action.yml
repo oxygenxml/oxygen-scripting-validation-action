@@ -1,5 +1,5 @@
 name: Oxygen XML/JSON - Validate Files
-description: Validate XML, XSD, JSON, JSON Schema, YAML, HTML, CSS, LESS, WSDL, DITA, JS, RNG and other files using Oxygen Scripting
+description: Validation for XML, XSD, JSON, JSON Schema, YAML, HTML, CSS, LESS, WSDL, DITA, JS, RNG and other files and schemas using Oxygen Scripting
 branding:
   icon: 'check-square'
   color: 'blue'
