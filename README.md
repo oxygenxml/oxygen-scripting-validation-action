@@ -1,6 +1,6 @@
 # Oxygen Validation Action
 
-This action triggers <i>Oxygen Scripting</i> to perform a validation on your repository files. All you have to do is to include this action in your workflow and choose the directory to be validated. Find more info about workflows on https://docs.github.com/en/actions/using-workflows.
+This action triggers <i>Oxygen Scripting</i> to perform a validation on your repository files. It can be used to validate XML, XSL, XQuery, XSD, JSON, JSON Schema, YAML, HTML, CSS, LESS, WSDL, DITA, RNG, DTD, XQuery, JS. All you have to do is to include this action in your workflow and choose the directory to be validated. Find more info about workflows on https://docs.github.com/en/actions/using-workflows.
 
 👀 See [Oxygen Validate Script](https://www.oxygenxml.com/doc/versions/25.0/ug-editor/topics/scripting_oxygen_validate.html) for more details about this script.
 
